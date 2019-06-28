@@ -1,0 +1,42 @@
+{
+  "name": "avalon-fis3",
+  "version": "1.0.0",
+  "description": "avalon2 fis3 单页，多页开发、",
+  "main": "index.js",
+  "repository": "https://github.com/lz2007/avalon-fis3.git",
+  "author": "梁柱 <15622207904@163.com>",
+  "license": "MIT",
+  "scripts": {
+    "fis3": "fis3 -v",
+    "dev": "fis3 server start -p 3000 & fis3 release dev -w",
+    "clean": "fis3 server stop && fis3 server clean && rimraf build && rimraf *.zip",
+    "build": "rimraf build && fis3 release production -cd ./build"
+  },
+  "dependencies": {
+    "avalon2": "^2.2.7",
+    "babel-polyfill": "^6.26.0",
+    "es5-shim": "^4.5.9",
+    "es6-promise": "^4.1.0",
+    "jquery": "^1.12.4",
+    "mmRouter": "^0.9.6"
+  },
+  "devDependencies": {
+    "asyncawait": "^1.0.7",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-es3-member-expression-literals": "^6.22.0",
+    "babel-plugin-transform-es3-property-literals": "^6.22.0",
+    "babel-plugin-transform-proto-to-assign": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "chalk": "^2.4.2",
+    "fis-parser-babel-6.x": "^6.24.1",
+    "fis3": "^3.4.41",
+    "fis3-hook-commonjs": "^0.1.31",
+    "fis3-hook-node_modules": "^2.3.1",
+    "fis3-parser-translate-es3ify": "^0.0.3",
+    "fis3-postpackager-loader": "^2.1.11",
+    "fis3-postprocessor-component-view": "^1.0.8",
+    "fis3-preprocessor-js-require-css": "^0.1.3",
+    "fis3-preprocessor-js-require-file": "^0.1.3",
+    "rimraf": "^2.6.1"
+  }
+}
