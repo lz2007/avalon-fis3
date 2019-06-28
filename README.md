@@ -8,16 +8,23 @@ fis3 搭建 avalon 开发环境，兼容ie8
 
 
 ## 安装教程
+
 1. 安装nodejs 6.x https://nodejs.org/zh-cn/download/releases/
 2. git clone https://github.com/lz2007/avalon-fis3.git
 3. cd avalon-fis3
-4. npm install
+4. npm install -g cnpm --registry=https://registry.npm.taobao.org
+5. cnpm install
 5. npm run dev
+
+or
+
+1.npm install yarn
+2.yarn
+3.yarn dev
 
 ## 使用说明
 
-1. 使用avalon-fis3 目录 下 node版本，需要卸载本机nodejs版本，将avalon-fis3 下 bin 添加 到 path 环境变量（经过项目考验）
-2. 使用自行下载nodejs，版本只支持6.x版本
+1. fis3 支持 node 版本 6.x
 
 ## 开始
 
@@ -66,12 +73,6 @@ fis3 搭建 avalon 开发环境，兼容ie8
 1、build的时候会对 CSS 中，路径带 ?__sprite 的图片进行合并。仅对CSS文件中添加了此标志的雪碧图才会被处理，而其他HTML和JS中无效；
 2、请尽量使用字体或者png格式的图片；
 3、图片请使用原大小插入，不允许拉伸，不然合并后会变小或者变大；
-```
-
-## 关于全局配置文件的说明
-```
-/services/configService.js 在run build之后 ，会输出到 /static/configService.js
-请将有可能需要用到的全局配置、开关参数等等，写在这个文件内，然后在所需要的app或pages中import
 ```
 
 ## 浏览器支持
