@@ -1,11 +1,12 @@
-## avalonjs fis3 单页，多页开发工程化搭建
+## avalonjs fis3 
+单页，多页开发工程化搭建
 
-## Install Node 6.x
+## 安装node 6.x版本
 ```shell
 <a href="https://nodejs.org/zh-cn/download/releases/" target="_blank"><
 ```
 
-## Install Yarn
+## 安装yarn
 ```shell
 npm install yarn -g
 ```
