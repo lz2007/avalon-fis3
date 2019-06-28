@@ -9,7 +9,7 @@ fis3 搭建 avalon 开发环境，兼容ie8
 
 ## 安装教程
 1. 安装nodejs 6.x https://nodejs.org/zh-cn/download/releases/
-2. git clone https://gitee.com/lz88888888/avalon-fis3.git
+2. git clone https://github.com/lz2007/avalon-fis3.git
 3. cd avalon-fis3
 4. npm install
 5. npm run dev
